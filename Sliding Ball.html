@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bouncing Ball</title>
+	<style type="text/css">
+		 #ball {    
+             width: 150px;    
+             height: 150px;    
+             border-radius: 50%;
+             top:50px;
+             left:110px;
+             background-color: black;
+             background-image: radial-gradient(circle 200px at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),
+                 radial-gradient(circle 100px at 40px 50px, rgba(255,255,255,.7), rgba(0,0,0,0));
+              position:absolute ;
+              background-repeat: no-repeat, no-repeat;
+              animation: bouncing-ball ease-in 0.8s  infinite alternate;                          
+          }
+        @keyframes bouncing-ball {
+           100%{
+                transform:translateY(330px) 
+                }
+          }
+
+          #shadow{
+              position:absolute;
+              margin-left: 150px;
+              top:515px;
+              height:10px;
+              width:50px;
+              opacity:50%;
+              border-radius:50%;
+              background-color:grey;
+              animation:shadow  1.6s linear infinite ;
+          }
+          @keyframes shadow{
+            
+              0%{
+                  transform:scale(2);
+              }
+              50%{
+                  transform:scale(.4);
+              }
+              100%{
+                  transform:scale(2);
+              }
+          }
+          #ball1{    
+            width: 150px;    
+            height: 150px;    
+            border-radius: 50%;
+            top:50px;
+            left:410px;
+            background-color: black;
+            background-image: radial-gradient(circle 200px at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),
+                radial-gradient(circle 100px at 40px 50px, rgba(255,255,255,.7), rgba(0,0,0,0));
+             position:absolute ;
+             background-repeat: no-repeat, no-repeat;
+             animation: bouncing-ball-1 ease-in 1.2s  infinite alternate;                          
+         }
+         @keyframes bouncing-ball-1 {
+            100%{
+                 transform:translateY(330px) 
+                 }
+           }
+         #shadow1{
+            position:absolute;
+            margin-left: 450px;
+            top:515px;
+            height:10px;
+            width:50px;
+            opacity:50%;
+            border-radius:50%;
+            background-color:grey;
+            animation:shadow1  1.6s linear infinite ;
+        }
+        @keyframes shadow1{
+          
+            0%{
+                transform:scale(2);
+            }
+            50%{
+                transform:scale(.4);
+            }
+            100%{
+                transform:scale(2);
+            }
+        }
+         #ball2{    
+            width: 150px;    
+            height: 150px;    
+            border-radius: 50%;
+            top:50px;
+            left:710px;
+            background-color: black;
+            background-image: radial-gradient(circle 200px at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),
+                radial-gradient(circle 100px at 40px 50px, rgba(255,255,255,.7), rgba(0,0,0,0));
+             position:absolute ;
+             background-repeat: no-repeat, no-repeat;
+             animation: bouncing-ball-2 ease-in 0.8s  infinite alternate;                          
+         }
+         @keyframes bouncing-ball-2 {
+            100%{
+                 transform:translateY(330px) 
+                 }
+           }
+         #shadow2{
+            position:absolute;
+            margin-left: 750px;
+            top:515px;
+            height:10px;
+            width:50px;
+            opacity:50%;
+            border-radius:50%;
+            background-color:grey;
+            animation:shadow2  1.6s linear infinite ;
+        }
+        @keyframes shadow2{
+          
+            0%{
+                transform:scale(2);
+            }
+            50%{
+                transform:scale(.4);
+            }
+            100%{
+                transform:scale(2);
+            }
+        }
+        #ball3{    
+            width: 150px;    
+            height: 150px;    
+            border-radius: 50%;
+            top:50px;
+            left:1050px;
+            background-color: black;
+            background-image: radial-gradient(circle 200px at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),
+                radial-gradient(circle 100px at 40px 50px, rgba(255,255,255,.7), rgba(0,0,0,0));
+             position:absolute ;
+             background-repeat: no-repeat, no-repeat;
+             animation: bouncing-ball-3 ease-in 1.2s  infinite alternate;                          
+         }
+         @keyframes bouncing-ball-3 {
+            100%{
+                 transform:translateY(330px) 
+                 }
+           }
+         #shadow3{
+            position:absolute;
+            margin-left: 1100px;
+            top:515px;
+            height:10px;
+            width:50px;
+            opacity:50%;
+            border-radius:50%;
+            background-color:grey;
+            animation:shadow2  1.6s linear infinite ;
+        }
+        @keyframes shadow3{
+          
+            0%{
+                transform:scale(2);
+            }
+            50%{
+                transform:scale(.4);
+            }
+            100%{
+                transform:scale(2);
+            }
+        }
+	</style>
+</head>
+<body>
+       <div>
+            <div id="ball"></div>
+        </div>
+        <div>
+            <div id="shadow"></div>
+        </div>
+        <div>
+            <div id="ball1"></div>
+        </div>
+        <div>
+            <div id="shadow1"></div>
+        </div>
+        <div>
+            <div id="ball2"></div>
+        </div>
+        <div>
+            <div id="shadow2"></div>
+        </div>
+        <div>
+            <div id="ball3"></div>
+        </div>
+        <div>
+            <div id="shadow3"></div>
+        </div>
+</body>
+</html>
